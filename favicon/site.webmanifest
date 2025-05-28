@@ -1,6 +1,6 @@
 {
-  "name": "focaccia.dev",
-  "short_name": "focaccia",
+  "name": "ciabbi.dev",
+  "short_name": "ciabbi",
   "icons": [
     {
       "src": "/%sveltekit.assets%/favicon/web-app-manifest-192x192.png",
