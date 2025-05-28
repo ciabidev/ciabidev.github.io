@@ -100,7 +100,7 @@
       height: 40px;
       width: 40px;
       border-bottom-left-radius: 50%;
-      box-shadow: 0 20px 0 0 var(--nav-bg);
+      box-shadow: 0 20px 0 0 var(--nav-bg, #000000);
       z-index: 10;
     }
 
@@ -112,7 +112,7 @@
       height: 40px;
       width: 40px;
       border-bottom-right-radius: 50%;
-      box-shadow: 0 20px 0 0 var(--nav-bg);
+      box-shadow: 0 20px 0 0 var(--nav-bg, #000000);
       z-index: 10;
     }
   
