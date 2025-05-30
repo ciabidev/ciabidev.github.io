@@ -76,7 +76,7 @@
     color: var(--navbar-highlight);
     /* dark: color: black; */
     font-size: 13px;
-    padding: var(--padding) 3px;
+    padding: 5px var(--padding);
     opacity: 0.75;
     text-decoration: none;
     user-select: none;
@@ -98,14 +98,15 @@
   }
 
    a[role="tab"]:hover:not(.active) {
-    background: var(--nav-hover-color)
+    background: var(--nav-hover-bg)
   }
 
-  @media only screen and (max-width: 600px) {
+
+ /* @media only screen and (max-width: 600px) {
     a[role="tab"] {
-      padding: calc(var(--padding) - 5px) 3px;
+      padding: calc(var(--padding) - 12px) 3px;
     }
-  }
+  } */
 
   
 </style>

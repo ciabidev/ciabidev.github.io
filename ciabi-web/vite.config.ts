@@ -39,7 +39,7 @@ export default defineConfig({
 		fs: {
 			allow: [
 				// your custom rules
-				'/ciabbi-web/src/changelog/*'
+				'/ciabi-web/src/changelog/*'
 			]
 		}
 	}

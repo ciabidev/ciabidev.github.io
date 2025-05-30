@@ -1,5 +1,5 @@
 {
-	"name": "ciabbi-web",
+	"name": "ciabi-web",
 	"private": true,
 	"version": "0.1.0",
 	"type": "module",
@@ -7,6 +7,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"host": "vite --host",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",

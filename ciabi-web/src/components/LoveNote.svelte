@@ -6,7 +6,7 @@
 <div class="lovenote-container">
   <HeartSolid style="color: red; min-width: 15px; min-height: 15px; max-width: 15px; max-height: 15px;" />
   
-  <div class="sub-text lovenote">made with love by the ciabbi development team (me 😢)</div>
+  <div class="sub-text lovenote">made with love by the ciabi development team (me 😢)</div>
 </div>
 
 <style>
@@ -29,13 +29,13 @@
   }
 
   /* .lovenote::after {
-    content: "made with love by the ciabbi development team (me 😢)";
+    content: "made with love by the ciabi development team (me 😢)";
   } */
 
   @media only screen and (max-width: 600px) {
     /* lazy ahh coding */
     /* .lovenote::after {
-      content: "made with love by the ciabbi team (me 😢)";
+      content: "made with love by the ciabi team (me 😢)";
     } */
 
     .lovenote-container {

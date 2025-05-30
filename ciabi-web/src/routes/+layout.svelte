@@ -10,12 +10,13 @@
 
 <div class="basket">
   <!-- acts as a second "body"-->
-  <Navbar />
   <div class="loaf">
     <!-- main content of the page -->
     {@render children()}
   </div>
+
+    <Navbar />
 </div>
 
 
-<style src="../static/"></style>
+<style src="C:\Users\LEGEND-PC\Documents\GitHub\ciabi.github.io\ciabi-web\static\shared.css"></style>

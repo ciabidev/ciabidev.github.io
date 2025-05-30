@@ -13,8 +13,8 @@
 
 <div class="navbar-container">
   <nav class="navbar">
-    <div class="logo" aria-label="ciabbi.dev logo">
-      <img class="ciabbi-logo" src="/logo.png" alt="ciabbi-logo" />
+    <div class="logo" aria-label="ciabi.dev logo">
+      <img class="ciabi-logo" src="/logo.png" alt="ciabi-logo" />
     </div>
     <nav class="navbar-tabs">
       <NavTab name={"about?"} Icon={InfoIcon} href={"/"} />
@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    height: var(--navbar-height);
+    height: calc(var(--navbar-height) + var(--navbar-inner-padding));
     bottom: 0;
     width: 100%;
     z-index: 1005;
@@ -45,14 +45,12 @@
     display: flex;
     overflow-x: auto;
     flex-direction: row;
-       border-radius: 0rem;
+    border-radius: 0rem;
     width: 100%;
     overflow-y: hidden;
     align-items: center;
     justify-content: center;
     background-color: var(--nav-bg);
-
-    padding: 0px 3px;
   }
 
   .navbar-tabs {
@@ -60,7 +58,7 @@
     flex-direction: row;
     align-items: center;
     height: 100%;
-    padding: 5px;
+    padding: var(--navbar-inner-padding);
     overflow-x: scroll;
     overflow-y: hidden;
     z-index: 1005;
@@ -85,14 +83,14 @@
     text-decoration: none;
   }
 
-  .ciabbi-logo {
+  .ciabi-logo {
     border-radius: 20px;
     width: 60px;
     object-fit: cover;
     height: 60px;
   }
     /* cozy navbar */
-    .navbar:before {
+    .navbar-container:before {
       content: "";
       position: absolute;
       top: -40px;
@@ -104,7 +102,7 @@
       z-index: 10;
     }
 
-    .navbar:after {
+    .navbar-container:after {
       content: "";
       position: absolute;
       top: -40px;
@@ -115,5 +113,16 @@
       box-shadow: 0 20px 0 0 var(--nav-bg, #000000);
       z-index: 10;
     }
+
+    @media screen and (max-width: 600px) {
+      .navbar-container {
+        height: var(--mobile-navbar-height);
+      }
+    }
   
+    @media screen and (max-height: 400px) {
+      .navbar-container {
+        height: var(--mobile-navbar-height);
+      }
+    }
 </style>

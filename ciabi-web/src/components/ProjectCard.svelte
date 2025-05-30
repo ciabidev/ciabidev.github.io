@@ -12,9 +12,9 @@
       <span class="project-url sub-text" data-sveltekit-replacestate><LinkIcon style="min-width: 1rem; min-height: 1rem; flex-shrink: 0;" class="icon" />{url}</span>
     </div>
   </a>
-  <p class=" sub-text">
+  <div class="sub-text description">
     {description}
-  </p>
+  </div>
 </div>
 
 <style>
@@ -35,10 +35,6 @@
 
   }
 
-  .card:hover {
-    transform: scale(1.015,1.015);
-  }
-
   .project-button {
 
     flex-shrink: 0;
@@ -57,7 +53,7 @@
   }
 
   .project-button:hover {
-    background: var(--hover-color);
+    background: var(--hover-bg);
   }
 
   .project-info {
@@ -89,9 +85,12 @@
     border-radius: 12px;
   }
 
-  p {
+  .description {
     padding-left: 10px;
+    font-size: 0.9rem;
   }
+
+
 
   @media only screen and (max-width: 800px) {
      .card {

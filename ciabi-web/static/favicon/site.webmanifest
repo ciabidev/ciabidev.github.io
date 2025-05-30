@@ -1,6 +1,6 @@
 {
-  "name": "ciabbi.dev",
-  "short_name": "ciabbi",
+  "name": "ciabi.dev",
+  "short_name": "ciabi",
   "icons": [
     {
       "src": "/%sveltekit.assets%/favicon/web-app-manifest-192x192.png",
