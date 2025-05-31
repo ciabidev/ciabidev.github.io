@@ -11,7 +11,7 @@
 			<p class="giantahhparagraph">
 				an open-source bakery featuring all of your favorite bakes and toppings (projects and
 				utilities), free for anyone to use. we are heavily inspired by imput and their projects, you
-				can check them out <a href="https://imput.net">here</a>
+				can check them out <a href="https://imput.net" target="_blank">here</a>
 			</p>
 		</section>
     <section id="why">
@@ -20,7 +20,7 @@
     </section>
     <section id="whatprojects??">
 		<h3>what projects</h3>
-		<p>as of now, there are no projects but im working on it every day! <a href="https://github.com/ciabi/ciabi.github.io
+		<p>as of now, there are no projects but im working on it every day! <a target="_blank" href="https://github.com/ciabi/ciabi.github.io
 ">our repositor</a></p>
     </section>
 		<p class="giantahhparagraph"><b>pick any menu item below ⏬</b></p>

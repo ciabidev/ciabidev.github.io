@@ -3,12 +3,9 @@
   import InfoIcon from "~icons/basil/info-rect-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
   // @ts-ignore
   import StarIcon from "~icons/basil/star-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
-  import { onMount } from "svelte";
 
   import NavTab from "./NavTab.svelte";
-  import { Tween } from "svelte/motion";
-  import { cubicOut } from "svelte/easing";
-  import { setContext } from "svelte";
+
 </script>
 
 <div class="navbar-container">
@@ -30,8 +27,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    height: calc(var(--navbar-height) + var(--navbar-inner-padding));
+    position: sticky;
+    height: calc(var(--navbar-height));
     bottom: 0;
     width: 100%;
     z-index: 1005;
@@ -55,12 +52,12 @@
 
   .navbar-tabs {
     display: flex;
+    padding: var(--navbar-inner-padding);
     flex-direction: row;
     align-items: center;
-    height: 100%;
-    padding: var(--navbar-inner-padding);
     overflow-x: scroll;
-    overflow-y: hidden;
+    height: 100%;
+    overflow-y: none;
     z-index: 1005;
     vertical-align: center;
     justify-content: space-evenly;

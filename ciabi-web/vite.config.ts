@@ -39,7 +39,8 @@ export default defineConfig({
 		fs: {
 			allow: [
 				// your custom rules
-				'/ciabi-web/src/changelog/*'
+				'/ciabi-web/src/changelog/*',
+				'/shared.css'
 			]
 		}
 	}

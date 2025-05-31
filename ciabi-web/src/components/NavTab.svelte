@@ -47,6 +47,7 @@
   {href}
   aria-selected={isTabCurrentPage}
   bind:this={tab}
+  data-sveltekit-preload-data data-sveltekit-noscroll
 >
   <Icon style="font-size: 25px; " class="icon" />
   <span>{name}</span>
@@ -72,8 +73,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: -3px;
     color: var(--navbar-highlight);
+    height: 100%;
     /* dark: color: black; */
     font-size: 13px;
     padding: 5px var(--padding);

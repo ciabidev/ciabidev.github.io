@@ -2,7 +2,7 @@
 	let { Icon, href } = $props();
 </script>
 
-<a class="contact" {href}>
+<a class="contact" {href} target="_blank">
 	<Icon />
 </a>
 
