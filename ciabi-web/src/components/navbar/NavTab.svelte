@@ -47,7 +47,6 @@
   {href}
   aria-selected={isTabCurrentPage}
   bind:this={tab}
-  data-sveltekit-preload-data data-sveltekit-noscroll
 >
   <Icon style="font-size: 25px; " class="icon" />
   <span>{name}</span>
@@ -68,7 +67,7 @@
   }
 
   a[role="tab"] {
-    transition: transform 300ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition: transform 250ms cubic-bezier(0.33, 1, 0.68, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +76,17 @@
     height: 100%;
     /* dark: color: black; */
     font-size: 13px;
-    padding: 5px var(--padding);
+    padding: var(--padding);
     opacity: 0.75;
     text-decoration: none;
     user-select: none;
     min-width: 90px;
     user-select: none;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
   }
 
   /* shrinks down for a little then scales back up once it gains the .active class */
-  a[role="tab"]:active:not(.active) {
+  a[role="tab"]:active:hover:not(.active) {
     transform: scale(0.85, 0.85);
   }
 
@@ -98,10 +97,11 @@
     cursor: default;
   }
 
+@media not all and (hover: none) {
    a[role="tab"]:hover:not(.active) {
     background: var(--nav-hover-bg)
   }
-
+}
 
  /* @media only screen and (max-width: 600px) {
     a[role="tab"] {

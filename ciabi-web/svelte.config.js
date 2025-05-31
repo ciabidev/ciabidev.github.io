@@ -15,7 +15,9 @@ const config = {
 			// an alias ending /* will only match
 			// the contents of a directory, not the directory itself
 			'$components/*': './src/components/*',
-			'$static/*': './static/*'
+			'$static/*': './static/*',
+			'$stores/*': './src/stores/*',
+
 		}
 	}
 };

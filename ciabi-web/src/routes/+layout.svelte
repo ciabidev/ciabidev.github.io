@@ -2,7 +2,8 @@
   import type { LayoutData } from "./$types";
 
   import LoveNote from "$components/LoveNote.svelte";
-  import Navbar from "$components/Navbar.svelte";
+  import Navbar from "$components/navbar/Navbar.svelte";
+	import type { Snippet } from "svelte";
   let { data, children }: { data: LayoutData; children: Snippet } = $props();
 </script>
 

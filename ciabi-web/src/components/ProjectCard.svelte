@@ -6,7 +6,7 @@
 
 <div class="card">
   <a class="project-button" target="_blank" {href}>
-    <img src={img} alt={projectName} class="project-icon" />
+    <img src={img} alt={projectName} class="project-icon icon" />
     <div class="project-info">
       <div class="project-name">{projectName}</div>
       <span class="project-url sub-text" data-sveltekit-replacestate><LinkIcon style="min-width: 1rem; min-height: 1rem; flex-shrink: 0;" class="icon" />{url}</span>
@@ -21,7 +21,7 @@
 /* i know all these random flex styles are a bandaid solution but for some reason items just wouldn't stay in the flexbox so i had to use this */
 
   .card {
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     box-shadow: var(--shadow-main);
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@
   }
 
   .project-button {
-
+    user-select: none;
     flex-shrink: 0;
     display: flex;
     min-width: fit-content;
@@ -46,7 +46,7 @@
     gap: 10px;
     text-decoration: none;
     position: relative;
-    border-radius: 0.75rem;
+    border-radius: var(--border-radius);
     padding: 7px 9px;
     width: max-content;
 
@@ -54,6 +54,8 @@
 
   .project-button:hover {
     background: var(--hover-bg);
+    	filter: brightness(1.1);
+
   }
 
   .project-info {
@@ -92,11 +94,11 @@
 
 
 
-  @media only screen and (max-width: 800px) {
+  /* @media only screen and (max-width: 600px) {
      .card {
       width: 100%;
       padding: 14px 18px 18px 6px;
   }
-  }
+  } */
 
 </style>

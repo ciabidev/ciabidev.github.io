@@ -19,6 +19,7 @@
 
   .pfp > img {
     width: 150px;
+    user-select: none;
     height: 150px;
   }
 

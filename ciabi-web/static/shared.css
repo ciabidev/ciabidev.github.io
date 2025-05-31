@@ -25,9 +25,14 @@
 		rgba(93, 140, 192, 0.25) 0rem 0.1875rem 0.125rem,
 		rgba(93, 140, 192, 0.24) 0rem 0.4375rem 0.8125rem -0.1875rem,
 		#ffffff25 0rem -0.1875rem 0rem inset;
-	--shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, inset rgba(0, 0, 0, 0.08) 0rem 0rem 0rem 2px;
+	--shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, inset rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 2px;
+	--shadow-button: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, inset /* border */ rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 1px;
+	--button-bg: #0000000e;
+	--button-bg-inverted: #000000;
+	--button-bg-hover: #00000017;
+	--button-color-inverted: #ffffff;
 	--shadow-deep:
-		rgba(0, 0, 0, 0.05) 0rem 0.375rem 2rem 0rem, rgba(0, 0, 0, 0.5) 0rem 0rem 0rem 0.1875rem;
+		rgba(0, 0, 0, 0.05) 0rem 6px 24px 0rem, inset rgba(0, 0, 0, 1) 0rem 0rem 0rem 2px;
 	--navbar-lift: 1rem;
 	--navbar-height: 80px;
 	--mobile-navbar-height: 64px;
@@ -40,6 +45,7 @@
 		linear-gradient(to right, rgba(128, 128, 128, 0.05) 1px, transparent 1px),
 		linear-gradient(to bottom, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
 	--grid-bg-size: 15px 15px;
+	--border-radius: 0.75rem;
 }
 
 body {
@@ -56,6 +62,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
+	overscroll-behavior: none;
+	position: fixed;
 	padding: 0;
 }
 
@@ -553,7 +561,7 @@ a:hover {
 	width: 100%;
 	height: 100dvh;
 	/* background-image: var(--grid-bg); */
-	background-color: var(--bg-color-beige);
+	background-color: var(--bg-color);
 }
 
 .loaf {
@@ -652,6 +660,7 @@ a:hover {
 
 .icon {
   object-fit: cover;
+  flex-shrink: 0;
 }
 /* styles on mobile */
 
@@ -672,4 +681,12 @@ a:hover {
 	:root {
 		font-size: 14px;
 	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
 }

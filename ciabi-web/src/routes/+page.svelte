@@ -5,7 +5,6 @@
 <div class="welcome-container">
 	<div class="welcome">
 		<h1>👋 welcome to the bakery</h1>
-		<br />
 		<section id="what">
 			<h3>what is the bakery?</h3>
 			<p class="giantahhparagraph">
@@ -20,7 +19,7 @@
     </section>
     <section id="whatprojects??">
 		<h3>what projects</h3>
-		<p>as of now, there are no projects but im working on it every day! <a target="_blank" href="https://github.com/ciabi/ciabi.github.io
+		<p>as of now, there are no projects but im working on it every day! <a target="_blank" href="https://github.com/ciabidev/ciabi.github.io
 ">our repositor</a></p>
     </section>
 		<p class="giantahhparagraph"><b>pick any menu item below ⏬</b></p>

@@ -3,18 +3,21 @@
   import InfoIcon from "~icons/basil/info-rect-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
   // @ts-ignore
   import StarIcon from "~icons/basil/star-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
+  // @ts-ignore
+  import BoxIcon from '~icons/basil/box-outline';
 
   import NavTab from "./NavTab.svelte";
 
+  import NavbarLogo from "./NavbarLogo.svelte";
+  
 </script>
 
 <div class="navbar-container">
   <nav class="navbar">
-    <div class="logo" aria-label="ciabi.dev logo">
-      <img class="ciabi-logo" src="/logo.png" alt="ciabi-logo" />
-    </div>
+    <NavbarLogo />
     <nav class="navbar-tabs">
       <NavTab name={"about?"} Icon={InfoIcon} href={"/"} />
+      <NavTab name={"packgod"} Icon={BoxIcon} href={"/packgod"} />
       <NavTab name={"me!"} Icon={StarIcon} href={"/wheatwhole"} />
 
     </nav>
@@ -42,7 +45,6 @@
     display: flex;
     overflow-x: auto;
     flex-direction: row;
-    border-radius: 0rem;
     width: 100%;
     overflow-y: hidden;
     align-items: center;
@@ -66,26 +68,7 @@
   .navbar > * {
     z-index: 1505;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: safe center;
-    color: var(--navbar-highlight);
-    font-size: 13px;
-    padding: 13px 3px;
-    opacity: 1;
-    min-width: fit-content;
-    min-height: 40px;
-    text-decoration: none;
-  }
-
-  .ciabi-logo {
-    border-radius: 20px;
-    width: 60px;
-    object-fit: cover;
-    height: 60px;
-  }
+  
     /* cozy navbar */
     .navbar-container:before {
       content: "";
@@ -115,6 +98,7 @@
       .navbar-container {
         height: var(--mobile-navbar-height);
       }
+
     }
   
     @media screen and (max-height: 400px) {

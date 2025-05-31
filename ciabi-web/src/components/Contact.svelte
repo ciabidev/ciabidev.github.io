@@ -2,8 +2,8 @@
 	let { Icon, href } = $props();
 </script>
 
-<a class="contact" {href} target="_blank">
-	<Icon />
+<a class="contact" {href} target="_blank" >
+	<Icon style=" flex-shrink: 0; font-size: 1.1rem"/>
 </a>
 
 <style>
@@ -13,8 +13,8 @@
 		align-items: center;
 		vertical-align: center;
 		flex-direction: row;
-		padding: 7px;
-		border-radius: 8px;
+		padding: 0.6rem;
+		border-radius: var(--border-radius);
 		text-decoration: none;
 		color: var(--text-color);
 		box-shadow: var(--shadow-main);

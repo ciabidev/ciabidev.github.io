@@ -12,7 +12,6 @@
       "#5588A3",
     ],
   };
-  import tag from "$components/Tag.svelte";
 </script>
 
 <div class="tag-container">
