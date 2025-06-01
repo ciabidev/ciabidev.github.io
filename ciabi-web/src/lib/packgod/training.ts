@@ -82,5 +82,3 @@ export const system =
   positivetrainingdata.join(" \n |  ") +
   '\n\n This is the NEGATIVE training data. This negative training data is data of roasts you\'ve generated. It will be presented in a JSON array format, with the "flaws" key being the flaws in the roast, and the "feedback" key being suggestions for future roasts. You should stray away from the *flaws* listed in each roast dictionary, and you should listen to the feedback given for each: ' +
   JSON.stringify(negativetrainingdata);
-
-console.log(system);
