@@ -1,6 +1,7 @@
 {
   "name": "ciabi",
   "short_name": "ciabi",
+  "start_url": "/",
   "icons": [
     {
       "src": "/%sveltekit.assets%/web-app-manifest-192x192.png",
