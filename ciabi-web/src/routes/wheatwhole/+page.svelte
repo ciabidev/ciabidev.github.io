@@ -74,6 +74,7 @@ let tags = [
 		flex-wrap: wrap;
 		min-height: max-content;
 		align-items: center;
+		height: 100%;
 		overscroll-behavior: none;
 		padding: calc(var(--padding) + 15px);
 		gap: 20px;
