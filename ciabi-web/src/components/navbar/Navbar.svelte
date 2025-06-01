@@ -27,18 +27,16 @@
 <style>
   .navbar-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     position: sticky;
     height: calc(var(--navbar-height));
     bottom: 0;
     width: 100%;
     z-index: 1005;
+    background-color: var(--nav-bg);
   }
 
   .navbar {
-    height: 100%;
     width: fit-content;
     z-index: 100;
     order: 3;
@@ -47,9 +45,7 @@
     flex-direction: row;
     width: 100%;
     overflow-y: hidden;
-    align-items: center;
     justify-content: center;
-    background-color: var(--nav-bg);
   }
 
   .navbar-tabs {
@@ -61,7 +57,6 @@
     height: 100%;
     overflow-y: none;
     z-index: 1005;
-    vertical-align: center;
     justify-content: space-evenly;
   }
 

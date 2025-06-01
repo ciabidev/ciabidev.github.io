@@ -103,11 +103,12 @@
   }
 }
 
- /* @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
     a[role="tab"] {
       padding: calc(var(--padding) - 12px) 3px;
+      height: fit-content;
     }
-  } */
+  } 
 
   
 </style>
