@@ -1,4 +1,6 @@
 <script>
+	import { toast } from 'react-hot-toast';
+
 	import Input from '$components/inputs/Input.svelte';
 	import Package from '~icons/twemoji/package';
 	import Clipboard from '~icons/twemoji/clipboard';
@@ -14,13 +16,15 @@
 	let copyButtonContent = $state('copy');
 
 	async function generateRoast() {
+		packgod.resultText = "nkow"
 		packgod.status = 'generating...';
 		packgod.resultText = await generate(packgod.inputText);
 		packgod.status = 'start';
 	}
 
-	function copyRoast() {
+	const copyRoast = () => {
 		copy(packgod.resultText);
+		toast("copied!");
 		copyButtonContent = 'copied!';
 		setTimeout(() => {
 			copyButtonContent = 'copy';
