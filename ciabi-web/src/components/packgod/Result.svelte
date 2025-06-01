@@ -1,23 +1,23 @@
 <script>
 	import { packgod } from '$lib/shared.svelte.js'
+
+	
 </script>
 
-<div class="output-wrapper">
-	<div class="output" 
-	>{packgod.outputText}</div>
+<div class="result-wrapper">
+	<div class="result" 
+	>{packgod.resultText}</div>
 </div>
 
 <style>
-	.output-wrapper {
-		max-width: var(--width);
-		max-height: var(--height);
+	.result-wrapper {
+		height: 200px;
 		width: 100%;
-		height: 100%;
 		box-shadow: var(--shadow-main);
     	border-radius: var(--border-radius);
 	}
 
-	.output {
+	.result {
 		font-size: 16px;
 		border: none;
 		overflow: auto;

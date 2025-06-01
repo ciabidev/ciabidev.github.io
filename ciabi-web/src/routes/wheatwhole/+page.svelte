@@ -56,13 +56,6 @@ let tags = [
 	<div class="projects">
 		<h3 class="tiny title">my games</h3>
 		<ProjectCard
-			href="https://wheatwhole.github.io/packgod"
-			url="wheatwhole.github.io/packgod"
-			projectName="packgod"
-			img="/icons/Packgod.webp"
-			description="we call it the packgod humbler 3000.  a scary accurate packgod roast generator made using pollinations.ai. will humble any fools in the vicinity.  practice caution when using. "
-		/>
-		<ProjectCard
 			href="https://github.com/wheatwhole/Award-Winning-Game"
 			url="the repository"
 			projectName="award winning game"

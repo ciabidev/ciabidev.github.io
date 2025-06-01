@@ -1,8 +1,8 @@
 <script>
-	let { Icon, content, href } = $props();
+	let { Icon, content, href, onclick } = $props();
 </script>
 
-<button class="button">
+<button class="button" {onclick}>
 	<Icon class="icon" style="flex-shrink: 0; font-size: 20px" />
 	{content}
 </button>
@@ -31,13 +31,15 @@
 		/* background: var(--color-allgood); */
 		box-shadow: var(--shadow-button);
 		background: var(--button-bg);
+		width: fit-content;
+		transition: all 300ms cubic-bezier(1, 0, 0, 1);
 	}
 
 	@media not all and (hover: none) {
 		.button:hover {
 			/* background: var(--button-bg-inverted);
 			color: var(--button-color-inverted); */
-			background: var(--button-bg-hover)
+			background: var(--button-bg-hover);
 		}
 	}
 </style>

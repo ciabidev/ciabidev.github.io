@@ -1,30 +1,98 @@
 <script>
-    import Textarea from "$components/packgod/Textarea.svelte";
-    import Package from '~icons/twemoji/package';
-    import MainButton from "$components/buttons/MainButton.svelte";
-    import Omnibox from "$components/packgod/Ominbox.svelte";
+	import Input from '$components/packgod/Input.svelte';
+	import Package from '~icons/twemoji/package';
+    import Clipboard from '~icons/twemoji/clipboard';
+    import Write from '~icons/basil/edit-alt-outline';
+
+	import { packgod } from '$lib/shared.svelte.js';
+
+    import Result from '$components/packgod/Result.svelte';
+	import MainButton from '$components/buttons/MainButton.svelte';
+
+	import { generate } from '$lib/packgod/generation.js';
+	import { writable } from 'svelte/store';
+
+    let copyButtonContent = $state("copy")
+
+	async function generateRoast() {
+        packgod.resultText = ""
+		packgod.status = 'generating...';
+		packgod.resultText = await generate(packgod.inputText);
+		packgod.status = 'start';
+
+	}
+
+    function copyRoast() {
+        copy(packgod.resultText)
+        copyButtonContent = "copied!"
+        setTimeout(() => {
+            copyButtonContent = "copy"
+        }, 3000);
+    }
 </script>
 
 <div class="packgod-page-wrapper">
-    <Omnibox />
+	<h1>packgod humbler 3000</h1>
+   
+	<div class="ze-machine">
+         <section class="warning">
+    <p>we call it the packgod humbler 3000.  a scary accurate packgod roast generator made using pollinations.ai. will humble any fools in the vicinity.  practice caution when using.</p>
+	<br>
+    <p>pretty barebones rn, expect a redesign soon.</p>
+    </section>
+		<Input placeholder="describe your opponent" bind:value={packgod.inputText} Icon={Write}/>
+		<div class="action-buttons">
+			<MainButton content={packgod.status} href="#" Icon={Package} onclick={generateRoast} />
+			{#if packgod.resultText}
+				<MainButton content={copyButtonContent} href="#" Icon={Clipboard} onclick={copyRoast}/>
+			{/if}
+		</div>
+		<Result />
+	</div>
 </div>
 
 <style>
-    :root {
-        width: initial;
-        height: initial;
-    }
+	:root {
+		width: initial;
+		height: initial;
+	}
 
-    .packgod-page-wrapper {
-        height: 100%;
+	.packgod-page-wrapper {
+		height: 100%;
 		width: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		flex-wrap: wrap;
 		align-items: center;
 		overscroll-behavior: none;
 		padding: var(--padding);
 		gap: 20px;
+	}
+
+	.ze-machine {
+		max-width: 640px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+	:root {
+		width: initial;
+		height: initial;
+	}
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
     }
+
+	@media only screen and (max-width: 440px) {
+		:global(.button) {
+			min-width: 100%;
+		}
+	}
 </style>
