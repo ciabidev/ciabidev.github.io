@@ -1,4 +1,4 @@
-document.title = '@wheatwhole';
+document.title = '@ciabi';
 async function titleEffect() {
 	function sleep(ms) {
 		return new Promise((resolve) => setTimeout(resolve, ms));
