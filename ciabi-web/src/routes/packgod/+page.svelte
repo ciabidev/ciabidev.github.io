@@ -15,7 +15,6 @@
     let copyButtonContent = $state("copy")
 
 	async function generateRoast() {
-        packgod.resultText = "we"
 		packgod.status = 'generating...';
 		packgod.resultText = await generate(packgod.inputText);
 		packgod.status = 'start';
