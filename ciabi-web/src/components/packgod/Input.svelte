@@ -3,13 +3,12 @@
 	let { placeholder, value = $bindable(''), Icon } = $props();
 </script>
 
-<div class="input-wrapper" class:focused={isFocused} >
-	
+<div class="input-wrapper" class:focused={isFocused}>
 	<div class="icon">
 		<Icon />
-	</div> 
+	</div>
 	<input
-		bind:value={value}
+		bind:value
 		class="input"
 		oninput={() => (isFocused = true)}
 		onfocus={() => (isFocused = true)}
@@ -31,6 +30,10 @@
 		transition: all 300ms cubic-bezier(1, 0, 0, 1);
 	}
 
+	.input-wrapper.focused {
+		box-shadow: var(--shadow-deep);
+	}
+
 	.input {
 		font-size: 14px;
 		width: 100%;
@@ -41,20 +44,21 @@
 		resize: none;
 	}
 
-	.input-wrapper.focused {
-		box-shadow: var(--shadow-deep);
+	@media (pointer: none), (pointer: coarse) {
+		.input {
+			font-size: 16px;
+		}
+		input:focus {
+			font-size: 16px;
+		}
 	}
-	
-	input:focus {
-		font-size: 14px;
-	}
+
 	.icon {
 		opacity: 0.5;
 		transition: all 300ms cubic-bezier(1, 0, 0, 1);
 	}
 
-	.input-wrapper.focused > .icon{
+	.input-wrapper.focused > .icon {
 		opacity: 1;
 	}
-
 </style>
