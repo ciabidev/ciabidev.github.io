@@ -45,6 +45,9 @@
 		box-shadow: var(--shadow-deep);
 	}
 	
+	input:focus {
+		font-size: 14px;
+	}
 	.icon {
 		opacity: 0.5;
 		transition: all 300ms cubic-bezier(1, 0, 0, 1);

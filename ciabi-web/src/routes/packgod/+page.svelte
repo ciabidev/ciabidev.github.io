@@ -62,7 +62,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		flex-wrap: wrap;
 		align-items: center;
 		overscroll-behavior: none;
 		padding: var(--padding);
