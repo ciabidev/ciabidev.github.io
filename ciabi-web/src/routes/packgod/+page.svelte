@@ -47,7 +47,7 @@
 			{/if}
 		</div>
 		<Result />
-	</div>
+</div>
 </div>
 
 <style>
@@ -61,10 +61,11 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: safe center;
 		align-items: center;
 		overscroll-behavior: none;
 		padding: var(--padding);
+        min-height: max-content;
 		gap: 20px;
 	}
 

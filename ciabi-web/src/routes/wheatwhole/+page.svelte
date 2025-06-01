@@ -67,11 +67,10 @@ let tags = [
 
 <style>
 	.wheatwhole-page-wrapper {
-		height: 100%;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: safe center;
 		flex-wrap: wrap;
 		min-height: max-content;
 		align-items: center;
