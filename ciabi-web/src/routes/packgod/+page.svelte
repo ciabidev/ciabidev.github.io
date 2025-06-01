@@ -15,7 +15,7 @@
     let copyButtonContent = $state("copy")
 
 	async function generateRoast() {
-        packgod.resultText = ""
+        packgod.resultText = "we"
 		packgod.status = 'generating...';
 		packgod.resultText = await generate(packgod.inputText);
 		packgod.status = 'start';
@@ -88,11 +88,16 @@
         display: flex;
         gap: 10px;
         flex-direction: row;
+        justify-content: space-around;
     }
 
-	@media only screen and (max-width: 440px) {
+	@media only screen and (max-width: 600px) {
 		:global(.button) {
-			min-width: 100%;
+            flex-grow: 1;
 		}
+
+        .action-buttons {
+            width: 100%;
+        }
 	}
 </style>
