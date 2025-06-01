@@ -24,7 +24,7 @@ async function titleEffect() {
 
 	async function typeAnimation(rtl, text, time) {
 		for (let i = 1; i <= text.length; i++) {
-			document.title = '@' + text.slice(0, rtl ? -i : +i);
+			document.title = "@" + text.slice(0, rtl ? -i : +i);
 			await delay(time);
 		}
 	}
@@ -32,18 +32,18 @@ async function titleEffect() {
 	async function loopAnimation() {
 		for (let s = 0; s > -1; s++) {
 			if (s == 10) {
-				await typeAnimation(true, 'wheatwhole', 250);
+				await typeAnimation(true, 'ciabi', 250);
 				await sleep(500);
 				await typeAnimation(false, 'rentry.org/wheatsecret', 250);
 				await sleep(10000);
 				await typeAnimation(true, 'rentry.org/wheatsecret', 250);
 				await sleep(500);
-				await typeAnimation(false, 'wheatwhole', 250);
+				await typeAnimation(false, 'ciabi', 250);
 				await sleep(500);
 			} else {
-				await typeAnimation(true, 'wheatwhole', 250);
+				await typeAnimation(true, 'ciabi', 250);
 				await sleep(500);
-				await typeAnimation(false, 'wheatwhole', 250);
+				await typeAnimation(false, 'ciabi', 250);
 				await sleep(500);
 			}
 		}
