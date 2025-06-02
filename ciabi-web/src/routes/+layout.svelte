@@ -13,11 +13,13 @@
   import LoveNote from "$components/LoveNote.svelte";
   import Navbar from "$components/navbar/Navbar.svelte";
 	import type { Snippet } from "svelte";
+	import Toasts from "$components/toasts/Toasts.svelte";
   let { data, children }: { data: LayoutData; children: Snippet } = $props();
 </script>
 
 
 <div class="basket">
+  <Toasts />
   <!-- acts as a second "body"-->
   <div class="loaf">
     <!-- main content of the page -->

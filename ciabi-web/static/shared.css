@@ -4,6 +4,7 @@
 :root {
 	--bg-color: #ffffff; /* dark: #1e272e */
 	--bg-color-beige: #f8f6f1;
+	--toast-bg: #ebc285;
 	--hover-bg: rgba(0, 0, 0, 0.06);
 	--nav-hover-bg: #ffffff33;
 	--gray: #adadad;
@@ -25,14 +26,17 @@
 		rgba(93, 140, 192, 0.25) 0rem 0.1875rem 0.125rem,
 		rgba(93, 140, 192, 0.24) 0rem 0.4375rem 0.8125rem -0.1875rem,
 		#ffffff25 0rem -0.1875rem 0rem inset;
-	--shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, inset rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 2px;
-	--shadow-button:
-		rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, inset /* border */ rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 1px;
+
+	--shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+	--toast-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px 2px;
+	--shadow-main-border: var(--shadow-main), inset rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 2px;
+	--shadow-main-border-deep: var(--shadow-main), inset rgba(0, 0, 0, 1) 0rem 0rem 0rem 2px;
+	--shadow-button: var(--shadow-main), inset /* border */ rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 1px;
+
 	--button-bg: #0000000e;
 	--button-bg-inverted: #000000;
 	--button-bg-hover: #00000017;
 	--button-color-inverted: #ffffff;
-	--shadow-deep: rgba(0, 0, 0, 0.05) 0rem 6px 24px 0rem, inset rgba(0, 0, 0, 1) 0rem 0rem 0rem 2px;
 	--navbar-lift: 1rem;
 	--navbar-height: 80px;
 	--mobile-navbar-height: calc(64px + env(safe-area-inset-bottom));

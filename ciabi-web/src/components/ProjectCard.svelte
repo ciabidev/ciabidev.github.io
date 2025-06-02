@@ -22,7 +22,7 @@
 
   .card {
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-main);
+    box-shadow: var(--shadow-main-border);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
