@@ -5,6 +5,5 @@ export const packgod = $state({
 });
 
 export const toasts = $state([
-	{ icon: 'icon', content: 'toasts' },
-	{ icon: 'icon2', content: 'are coming to ciabi soon!' }
+	{ icon: 'icon', content: 'toasts are coming to ciabi soon!' },
 ]);
