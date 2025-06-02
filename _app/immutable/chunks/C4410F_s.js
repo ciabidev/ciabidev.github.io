@@ -1,0 +1,1 @@
+import{d as t}from"./C5js9bRQ.js";const s=t({inputText:"",resultText:"",status:"start"}),n=t([{icon:"icon",content:"toasts"},{icon:"icon2",content:"are coming to ciabi soon!"}]);export{s as p,n as t};
