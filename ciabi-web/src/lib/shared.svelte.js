@@ -1,7 +1,5 @@
-
-
 export const packgod = $state({
-	inputText: "",
-	resultText: "",
-	status: "start"
+	inputText: '',
+	resultText: '',
+	status: 'start'
 });

@@ -19,7 +19,7 @@
 
 <style>
 	.input-wrapper {
-		box-shadow: var(--shadow-main);
+		box-shadow: var(--input-shadow);
 		border-radius: var(--border-radius);
 		width: 100%;
 		display: flex;
@@ -31,7 +31,7 @@
 	}
 
 	.input-wrapper.focused {
-		box-shadow: var(--shadow-deep);
+		box-shadow: var(--input-focus);
 	}
 
 	.input {

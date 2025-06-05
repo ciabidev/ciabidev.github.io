@@ -13,7 +13,7 @@
 	.result-wrapper {
 		height: 200px;
 		width: 100%;
-		box-shadow: var(--shadow-main);
+		box-shadow: var(--shadow-main-border);
     	border-radius: var(--border-radius);
 	}
 

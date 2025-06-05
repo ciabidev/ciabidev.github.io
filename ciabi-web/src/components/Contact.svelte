@@ -17,7 +17,7 @@
 		border-radius: var(--border-radius);
 		text-decoration: none;
 		color: var(--text-color);
-		box-shadow: var(--shadow-main);
+		box-shadow: var(--shadow-main-border);
 	}
 
 	.contact:hover {
