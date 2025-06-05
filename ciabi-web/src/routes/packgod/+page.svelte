@@ -12,6 +12,7 @@
 	import { generate } from '$lib/packgod/generation.js';
 	import { writable } from 'svelte/store';
 	import { packgod } from '$lib/shared.svelte.js';
+	import { newToast, toasts } from '$lib/toasts/toasts.svelte.js'
 
 	let copyButtonContent = $state('copy');
 
@@ -24,7 +25,7 @@
 
 	const copyRoast = () => {
 		copy(packgod.resultText);
-		toast("copied!");
+		newToast("hi","copied!");
 		copyButtonContent = 'copied!';
 		setTimeout(() => {
 			copyButtonContent = 'copy';

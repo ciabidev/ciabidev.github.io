@@ -28,9 +28,14 @@
 		#ffffff25 0rem -0.1875rem 0rem inset;
 
 	--shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
-	--toast-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px 2px;
-	--shadow-main-border: var(--shadow-main), inset rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 2px;
-	--shadow-main-border-deep: var(--shadow-main), inset rgba(0, 0, 0, 1) 0rem 0rem 0rem 2px;
+
+	/* inset shadows */
+	--toast-shadow: rgba(0, 0, 0, 0.1) 0px 2px 24px 2px, inset rgba(0, 0, 0, 0.1) 0rem 0rem 0rem 1px;
+	--shadow-main-border: var(--shadow-main), inset rgba(0, 0, 0, 0.1) 0rem 0rem 0rem 1px;
+	--input-shadow: var(--shadow-main), inset rgba(0, 0, 0, 0.1) 0rem 0rem 0rem 2px;
+	--input-focus: var(--shadow-main), inset rgba(0, 0, 0, 1) 0rem 0rem 0rem 2px;
+
+
 	--shadow-button: var(--shadow-main), inset /* border */ rgba(0, 0, 0, 0.14) 0rem 0rem 0rem 1px;
 
 	--button-bg: #0000000e;
@@ -49,7 +54,8 @@
 		linear-gradient(to right, rgba(128, 128, 128, 0.05) 1px, transparent 1px),
 		linear-gradient(to bottom, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
 	--grid-bg-size: 15px 15px;
-	--border-radius: 0.75rem;
+	--border-radius: 12px;
+	font-size: 16px;
 }
 
 html {
@@ -540,7 +546,7 @@ template {
 	min-width: 12.5rem;
 }
 p {
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 1.5;
 }
 

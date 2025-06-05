@@ -3,7 +3,3 @@ export const packgod = $state({
 	resultText: '',
 	status: 'start'
 });
-
-export const toasts = $state([
-	{ icon: 'icon', content: 'toasts are coming to ciabi soon!' },
-]);
