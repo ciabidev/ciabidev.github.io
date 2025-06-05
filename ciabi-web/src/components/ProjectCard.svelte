@@ -30,6 +30,7 @@
     padding: 12px 22px 22px 12px;
     align-items: flex-start;
     flex-shrink: 0;
+    max-height: fit-content;
     transition: 0.3s var(--actions-and-stuff-ahh-transition);
       max-width: 500px;
 

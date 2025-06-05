@@ -17,7 +17,7 @@
     <NavbarLogo />
     <nav class="navbar-tabs">
       <NavTab name={"about?"} Icon={InfoIcon} href={"/"} />
-      <NavTab name={"packgod"} Icon={BoxIcon} href={"/packgod"} />
+      <NavTab name={"projects"} Icon={BoxIcon} href={"/projects"} />
       <NavTab name={"me!"} Icon={StarIcon} href={"/wheatwhole"} />
 
     </nav>

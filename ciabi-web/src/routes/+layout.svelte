@@ -26,6 +26,6 @@
     {@render children()}
   </div>
 
-    <Navbar />
+  <Navbar />
 </div>
 

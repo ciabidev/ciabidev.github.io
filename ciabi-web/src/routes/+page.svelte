@@ -1,5 +1,6 @@
 <script>
 	import LoveNote from '$components/LoveNote.svelte';
+	import ProjectCard from '$components/ProjectCard.svelte'
 </script>
 
 <div class="welcome-container">
@@ -48,4 +49,5 @@
 			height: max-content;
 		}
 	}
+
 </style>
