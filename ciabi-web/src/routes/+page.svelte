@@ -21,8 +21,9 @@ import LoveNote from '$components/LoveNote.svelte';
     </section>
     <section id="whatprojects??">
 		<h3>what projects</h3>
-		<p>as of now, there are no projects but im working on it every day! <UrlButton url={"https://github.com/ciabidev/ciabidev.github.io"}, urlshort="github.com/ciabidev" name={"our repository"} img={"/logo/logo-discord.png"}/></p>
+		<p>as of now, there are no projects but im working on it every day! </p>
     </section>
+	<UrlButton url={"https://github.com/ciabidev/ciabidev.github.io"}, urlshort="github.com/ciabidev" name={"our repository"} img={"/logo/logo-discord.png"}/>
 		<p class="giantahhparagraph"><b>pick any menu item below ⏬</b></p>
 	</div>
 </div>
