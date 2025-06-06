@@ -1,13 +1,13 @@
 <script>
 	import { toast } from 'react-hot-toast';
 
-	import Input from '$components/inputs/Input.svelte';
+	import Input from '$components/inputs-and-buttons/Input.svelte';
 	import Package from '~icons/twemoji/package';
 	import Clipboard from '~icons/twemoji/clipboard';
 	import Write from '~icons/basil/edit-alt-outline';
 
 	import Result from '$components/packgod/Result.svelte';
-	import MainButton from '$components/inputs/MainButton.svelte';
+	import MainButton from '$components/inputs-and-buttons/MainButton.svelte';
 
 	import { generate } from '$lib/packgod/generation.js';
 	import { writable } from 'svelte/store';

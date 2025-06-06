@@ -57,8 +57,8 @@ let tags = [
 		<h3 class="tiny title">my games</h3>
 		<ProjectCard
 			href="https://github.com/wheatwhole/Award-Winning-Game"
-			url="the repository"
-			projectName="award winning game"
+			urlshort="the repository"
+			name="award winning game"
 			img="/icons/awg.png"
 			description="in this pixel platformer adventure, the world has been thrown into chaos after a rogue chemist unleashed a powerful ancient potion, permanently flooding the Earth with unstable magical energy. I havent come up with a name for this yet, so I just called it 'award winning game' since that is what it's gonna be anyways. please excuse the unclear commit messages and 'monobranch' type management. "
 		/>

@@ -1,17 +1,11 @@
 <script>
-  let { url, href, projectName, description, img } = $props();
+  let { urlshort, url, name, description, img } = $props();
   // @ts-ignore
-  import LinkIcon from '~icons/tabler/external-link'; 
+	import UrlButton from './inputs-and-buttons/URLButton.svelte';
 </script>
 
 <div class="card">
-  <a class="project-button" target="_blank" {href}>
-    <img src={img} alt={projectName} class="project-icon icon" />
-    <div class="project-info">
-      <div class="project-name">{projectName}</div>
-      <span class="project-url sub-text" data-sveltekit-replacestate><LinkIcon style="min-width: 1rem; min-height: 1rem; flex-shrink: 0;" class="icon" />{url}</span>
-    </div>
-  </a>
+  <UrlButton url={url} urlshort={urlshort} name={name} img={img} />
   <div class="sub-text description">
     {description}
   </div>
@@ -30,7 +24,7 @@
     padding: 12px 22px 22px 12px;
     align-items: flex-start;
     flex-shrink: 0;
-    max-height: fit-content;
+    min-height: 250px;
     transition: 0.3s var(--actions-and-stuff-ahh-transition);
       max-width: 500px;
 
@@ -59,7 +53,7 @@
 
   }
 
-  .project-info {
+  .url-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,13 +62,13 @@
     position: relative;
   }
 
-  .project-name {
+  .url-name {
     display: flex;
     font-weight: 600;
     font-size: 0.9rem;
   }
 
-  .project-url {
+  .url-destination {
     display: flex;
     flex-direction: row;
     align-items: center;

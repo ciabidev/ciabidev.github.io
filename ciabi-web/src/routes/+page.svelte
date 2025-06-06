@@ -1,5 +1,6 @@
 <script>
-	import LoveNote from '$components/LoveNote.svelte';
+	import UrlButton from '$components/inputs-and-buttons/URLButton.svelte';
+import LoveNote from '$components/LoveNote.svelte';
 	import ProjectCard from '$components/ProjectCard.svelte'
 </script>
 
@@ -20,8 +21,7 @@
     </section>
     <section id="whatprojects??">
 		<h3>what projects</h3>
-		<p>as of now, there are no projects but im working on it every day! <a target="_blank" href="https://github.com/ciabidev/ciabi.github.io
-">our repositor</a></p>
+		<p>as of now, there are no projects but im working on it every day! <UrlButton url={"https://github.com/ciabidev/ciabidev.github.io"}, urlshort="github.com/ciabidev" name={"our repository"} img={"/logo/logo-discord.png"}/></p>
     </section>
 		<p class="giantahhparagraph"><b>pick any menu item below ⏬</b></p>
 	</div>
@@ -34,17 +34,17 @@
 		display: flex;
 		justify-content: safe center;
 		align-items: center;
-		padding: calc(var(--padding) + 15px);
+		padding: calc(var(--padding) + .9375rem);
 		overflow-y: auto;
 	}
 	.welcome {
-		max-width: 600px;
+		max-width: 37.5rem;
 		display: flex;
 		flex-direction: column;
-		gap: 15px;
+		gap: .9375rem;
 	}
 
-	@media screen and (max-height: 600px) {
+	@media screen and (max-height: 37.5rem) {
 		.welcome-container {
 			height: max-content;
 		}
