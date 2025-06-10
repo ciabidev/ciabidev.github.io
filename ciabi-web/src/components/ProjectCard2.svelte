@@ -1,5 +1,5 @@
 <script>
-	let { url, href, projectName, description, img } = $props();
+	let { url, href, projectName, description, img, largeimg } = $props();
 	// @ts-ignore
 	import LinkIcon from '~icons/tabler/external-link';
 </script>
@@ -18,8 +18,8 @@
 	<div class="project-header">
 		<h2 class="project-name">{projectName}</h2>
 		<div class="sub-text description">{description}</div>
-		
 	</div>
+	<img src={largeimg} alt={projectName} />
 </div>
 
 <style>
