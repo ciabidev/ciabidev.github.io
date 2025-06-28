@@ -68,26 +68,7 @@ html {
 	}
 }
 
-body {
-	overflow-x: hidden;
-	overflow-y: auto;
-	width: 100vw;
-	height: 96vh;
-	background-size: cover;
-	font-family:
-		Noto Sans Mono Variable,
-		Noto Sans Mono,
-		monospace;
-	cursor: default;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin: 0;
-	overscroll-behavior: none;
-	position: fixed;
-	padding: 0;
-	opacity: 0;
-	animation: fadeIn 200ms forwards;
-}
+/* WHEATWHOLE'S RESET PACK */
 
 /* BEGIN RESET */
 /* 1. Use a more-intuitive box-sizing model */
@@ -534,6 +515,36 @@ template {
 	display: none;
 }
 
+/* my unadvanced reset uhh */
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100vw;
+	height: 96vh;
+	background-size: cover;
+	font-family:
+		Noto Sans Mono Variable,
+		Noto Sans Mono,
+		monospace;
+	cursor: default;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	overscroll-behavior: none;
+	position: fixed;
+	padding: 0;
+	opacity: 0;
+	animation: fadeIn 200ms forwards;
+}
+
+
+img {
+	user-select: none;
+}
+/* END RESET */
+
+
 .body-text {
 	color: var(--text-color);
 	font-size: 0.875rem;
@@ -545,8 +556,9 @@ template {
 	width: 80%;
 	min-width: 12.5rem;
 }
+
 p {
-	font-size: 0.875rem;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 
