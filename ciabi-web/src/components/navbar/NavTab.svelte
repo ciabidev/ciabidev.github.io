@@ -79,9 +79,13 @@
     padding: var(--padding);
     opacity: 0.75;
     text-decoration: none;
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
     min-width: 90px;
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
     border-radius: var(--border-radius);
   }
 

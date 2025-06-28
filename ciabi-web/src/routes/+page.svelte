@@ -23,7 +23,7 @@ import LoveNote from '$components/LoveNote.svelte';
 		<h3>what projects</h3>
 		<p>as of now, there are no projects but im working on it every day! </p>
     </section>
-	<UrlButton url={"https://github.com/ciabidev/ciabidev.github.io"}, urlshort="github.com/ciabidev" name={"our repository"} img={"/logo/logo-discord.png"}/>
+	<UrlButton url={"https://github.com/ciabidev/ciabidev.github.io"}, urlshort="github.com/ciabidev" name={"our repository"} img={"/logo/logo-padded.png"}/>
 		<p class="giantahhparagraph"><b>pick any menu item below ⏬</b></p>
 	</div>
 </div>

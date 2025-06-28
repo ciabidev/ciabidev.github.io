@@ -50,6 +50,8 @@
   font-family: "IBM Sans Mono", monospace;
   width: fit-content;
   color: var(--text-color);
-  user-select: none;
+   user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
 }
 </style>

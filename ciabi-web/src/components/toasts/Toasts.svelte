@@ -32,6 +32,8 @@
     }
     .toaster, .toaster > * {
         z-index: 3000;
-        user-select: none;
+         user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
     }
 </style>

@@ -18,6 +18,9 @@
 		text-decoration: none;
 		color: var(--text-color);
 		box-shadow: var(--shadow-main-border);
+		 user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
 	}
 
 	.contact:hover {

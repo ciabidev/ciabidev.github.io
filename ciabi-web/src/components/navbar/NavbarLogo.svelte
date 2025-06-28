@@ -21,7 +21,9 @@
 		width: 60px;
 		object-fit: cover;
 		height: 60px;
-		user-select: none;
+		 user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
 	}
 	@media screen and (max-width: 600px) {
 		.logo {

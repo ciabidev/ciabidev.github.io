@@ -19,13 +19,17 @@
 
   .pfp > img {
     width: 150px;
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
     height: 150px;
   }
 
   .bio-title {
     color: var(--wheatwhole-color);
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none; 
     font-size: 30px;
     font-weight: 430;
   }
