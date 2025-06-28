@@ -70,4 +70,8 @@
 		height: 3rem;
 		border-radius: 12px;
 	}
+
+	a {
+		cursor: pointer;
+	}
 </style>

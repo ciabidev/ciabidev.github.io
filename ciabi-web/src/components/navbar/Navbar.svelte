@@ -1,8 +1,8 @@
 <script lang="ts">
   // @ts-ignore
   import InfoIcon from "~icons/basil/info-rect-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
-  // @ts-ignore
-  import StarIcon from "~icons/basil/star-outline"; /* using Unplugin icons we can load icons at meowbalt speeds! */
+  // @ts-ignore (she aint even know it)
+  import StarIcon from "~icons/basil/star-outline";
   // @ts-ignore
   import BoxIcon from '~icons/basil/box-outline';
 

@@ -70,7 +70,11 @@ export async function generate(user_description) {
 
   random_seed = Math.floor(Math.random()*500);
   var roast = await postChatCompletion(chatMessages, { model: "deepseek-reasoning", seed: random_seed });
-  roast = roast.split('---')[0]
+  roast = roast.replace(/<think>[\s\S]*?<\/think>/gi, "")
+  roast = roast.replace(/\s{2,}/g, " ")
+  roast = roast.trim();
+
+
   console.log(roast)
   return roast
 

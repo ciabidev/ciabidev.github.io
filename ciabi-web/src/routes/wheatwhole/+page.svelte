@@ -1,5 +1,5 @@
 <script>
-	import ProjectCard from '$components/ProjectCard.svelte';
+	import ProjectCardMini from '$components/ProjectCardMini.svelte';
 	import Profile from '$components/Profile.svelte';
 	import Tags from '$components/Tags.svelte';
 	import Contact from '$components/Contact.svelte';
@@ -37,8 +37,7 @@ let tags = [
 			<Profile name={'wheatwhole'} />
 			<section class="short-bio" id="short-bio">
 				<p class="giantahhparagraph">
-					hi. i'm a ghanaian programmer and game developer who has every single idea what they are
-					doing. i also like messing around in blender. ✝️
+					i'm a full-stack and game developer who has won the internet 🥀🐝
 				</p>
 			</section>
 		</div>
@@ -55,7 +54,7 @@ let tags = [
 	</main>
 	<div class="projects">
 		<h3 class="tiny title">my games</h3>
-		<ProjectCard
+		<ProjectCardMini
 			href="https://github.com/wheatwhole/Award-Winning-Game"
 			urlshort="the repository"
 			name="award winning game"
