@@ -11,7 +11,7 @@
 	--card-bg: #00000015;
 	--main-color: #337e4c;
 	--wheatwhole-color: #52b171;
-	--text-color: #282828; /* text light isnt really text light, its text in Light mode */
+	--text-color: #282828; 
 	--nav-bg: #000000;
 	--sub-color: #00000067; /* for sub text */
 	--elevated: #e3e3e3; /* for buttons and tags */
@@ -541,6 +541,7 @@ body {
 
 img {
 	user-select: none;
+	pointer-events: none;
 }
 /* END RESET */
 

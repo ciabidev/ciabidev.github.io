@@ -18,8 +18,6 @@
     <nav class="navbar-tabs">
       <NavTab name={"about?"} Icon={InfoIcon} href={"/"} />
       <NavTab name={"projects"} Icon={BoxIcon} href={"/projects"} />
-      <NavTab name={"me!"} Icon={StarIcon} href={"/wheatwhole"} />
-
     </nav>
   </nav>
 </div>
