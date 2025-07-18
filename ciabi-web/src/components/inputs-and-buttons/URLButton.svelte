@@ -4,7 +4,9 @@
 </script>
 
 <a class="url-button" target="_blank" href={url}>
-	<img src={img} alt={name} class="url-icon icon" />
+	{#if img}
+		<img src={img} alt={name} class="url-icon icon" />
+	{/if}
 	<div class="url-text">
 		<div class="url-name">{name}</div>
 		<span class="url-short sub-text" data-sveltekit-replacestate

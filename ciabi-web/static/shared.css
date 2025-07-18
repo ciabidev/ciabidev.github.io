@@ -627,6 +627,16 @@ a:hover {
 	height: 100dvh;
 }
 
+code {
+	font-family: monospace;
+	font: 0.5rem;
+	color: white;
+	background-color: #292927;
+	padding: 1px 10px;
+	border-radius: 6px;
+	overflow-x: auto;
+}
+
 .center-container {
 	/* i added this because it just works idk */
 	height: 100%;
