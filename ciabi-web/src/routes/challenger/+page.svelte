@@ -10,18 +10,36 @@ AO Challenger is an Arcane Odyssey Discord bot that allows you to **ping globall
 
 ### For Users
 
+\`/help\` — get a list of commands
+
 \`/findpvp\` — join the queue for a 1v1  
+
 \`/globalpvp ping\` — ping an entire region for PvP
+
+\`/invite\` — invite the bot to your server
+
+\`/upvote\` — upvote bot on top.gg to support it for FREE 💖 
 
 ### For Admins
 
-To setup the bot for your server, simply use \`/globalpvp setup\`  
-\`/globalpvp setup\` — setup the bot  
+To setup the bot for your server, simply use \`/setup\`  
+\`/help\` — get a list of commands 
+
 \`/globalpvp settings\` — manage the globalpvp settings  
+
 \`/globalpvp muteuser\` — block a user from pinging your server  
+
 \`/globalpvp unmuteuser\` — unblock a user from pinging your server  
+
 \`/globalpvp setchannel\` — set the channel where global PvP pings will be sent  
+
 \`/globalpvp setregionalroles\` — assign roles to regions to be pinged
+
+\`/globalpvp sethostrole\` — choose the role that's allowed to use /globalpvp ping (@everyone by default)
+
+\`/invite\` — invite the bot to your server
+
+\`/upvote\` — upvote bot on top.gg to support it for FREE 💖
 
 ## Terms and Privacy
 
@@ -52,7 +70,7 @@ Two possible reasons:
 </div>
 
 <style>
-    .page-wrapper {
+     .page-wrapper {
         width: 100%;
         display: flex;
         flex-direction: row; /* has to be row so we can horizontally center */
@@ -68,6 +86,7 @@ Two possible reasons:
     .links {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 1rem;
         width: 100%;
     }

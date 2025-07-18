@@ -15,24 +15,25 @@ lumi is not responsible for any actions taken by it's users
 ### for Arcane Odyssey Staff
 Please contact me if you have any issues with the bot/want it taken down
 ### why lumi is 100% allowed for Arcane Odyssey clans
-![AO Rulebook Editor Waffle has confirmed that rule 2.8 (the rule that disallowed witch-hunting) no longer exists with the ability to turn your joins off. ](https://previews.dropbox.com/p/thumb/ACv6iC20LABjevJGCz2G6Np7I2g-EpC-qDlYK0HwxBsrOKcckRMndacF1Tk-eSh4ycTdv7PWbJygwSgLYtHBp-CkFUR6Ixei_3fktIP1e70HRqac4WaJou-Mz5qnSha6-6GCHzq7c2jDsEXmbTm2ScDiCysEqhOnHPHMNYRGheqoo3mWGpNnn_sbrDSUm1MDa-A3s99Ctr_LkHAswvBHADqwTOwu36XM1fQdvVwDY_46cdNhDqUwkWb9F120hD989ZNXLElEQn4nmvJ2zByvOjU38Z568CX1XQJnBycNQGFi1iNXzTuvFqvhXaQF-sLdyBittJzlWTHoPRQqpcp2EOfF/p.png)
 
-## links
+<img src="https://i.imgur.com/iMNMEBX.jpeg" alt="rulebook editor waffle has confirmed that rule 2.8 (the rule that disallowed witch-hunting) no longer exists with the ability to turn your joins off."/>
+
 `;
 
 </script>
 
 <div class="page-wrapper">
     <div class="main">
-        <Markdown source={source} />
-        <p> if you find lumi useful, please consider supporting me by donating or checking out my projects. It adds new features and helps me keep the bot running. </p>
-        <div class="links">
-            <a href="https://ko-fi.com/wheatwhole" target="_blank">
-                <img src="/support_me_on_kofi.png" alt = "support me on kofi" width="100rem" >
-            </a>
-            <UrlButton name="contact and projects" url="https://wheatwhole.github.io/" img="/wheatwhole.webp" urlshort = "my profile" />
-            <UrlButton name = "the code" url = "https://github.com/wheatwhole/lumi" urlshort = "github.com/wheatwhole/lumi" />
-        </div>
+            <Markdown source={source} />
+            <p> if you find lumi useful, please consider supporting me by donating or checking out my projects. It adds new features and helps me keep the bot running. </p>
+
+            <div class="links">
+                <a href="https://ko-fi.com/wheatwhole" target="_blank">
+                    <img src="/support_me_on_kofi.png" alt = "support me on kofi" width="100rem" >
+                </a>
+                <UrlButton name="contact and projects" url="https://wheatwhole.github.io/" img="/wheatwhole.webp" urlshort = "my profile" />
+                <UrlButton name = "the code" url = "https://github.com/wheatwhole/lumi" urlshort = "github.com/wheatwhole/lumi" />
+            </div>
     </div>
 </div>
 
@@ -53,6 +54,7 @@ Please contact me if you have any issues with the bot/want it taken down
     .links {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 1rem;
         width: 100%;
     }
