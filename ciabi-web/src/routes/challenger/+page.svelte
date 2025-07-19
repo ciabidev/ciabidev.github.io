@@ -25,11 +25,11 @@ AO Challenger is an Arcane Odyssey Discord bot that allows you to **ping globall
 To setup the bot for your server, simply use \`/setup\`  
 \`/help\` — get a list of commands 
 
-\`/globalpvp settings\` — manage the globalpvp settings  
+\`/globalpvp blockuser \` — block a user from all Challenger-related interactions with your server. Can block users from other servers as well.
 
-\`/globalpvp muteuser\` — block a user from pinging your server  
+\`/globalpvp unblockuser \` — unblock a user from your server
 
-\`/globalpvp unmuteuser\` — unblock a user from pinging your server  
+\`/globalpvp listblocked \` — list all blocked users
 
 \`/globalpvp setchannel\` — set the channel where global PvP pings will be sent  
 
@@ -55,6 +55,15 @@ Two possible reasons:
 `;
 
 </script>
+
+<!-- Page metadata for discord embed. This is a guide to AO Challenger and a list of all commands. The title is About AO Challenger-->
+    <svelte:head>
+        <title>AO Challenger</title>
+        <meta name="title" content="About/Guide to AO Challenger">
+        <meta name="description" content="Terms, about and a list of commands">
+        <meta name="keywords" content="arcane odyssey, arcane odyssey bot, arcane odyssey discord bot, ao discord bot, ping, pvp, 1v1, find a 1v1, global pvp, global ping, discord bot, discord bot, arcane odyssey bot">
+        <meta name="author" content="wheatwhole">
+    </svelte:head>
 
 <div class="page-wrapper">
     <div class="main">
