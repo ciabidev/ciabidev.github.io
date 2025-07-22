@@ -1,6 +1,7 @@
 <script>
 	import Markdown from '$components/Markdown.svelte';
     import UrlButton from '$components/inputs-and-buttons/URLButton.svelte';
+
     const source = `
 # What is AO Challenger?
 
@@ -43,15 +44,16 @@ To setup the bot for your server, simply use \`/setup\`
 
 ## Terms and Privacy
 
-We do not store any data about you or your pings. Your data is your business and your business only (this is the statement on all of our projects).  
-We are not responsible for rules broken using this bot.  
-This bot is not affiliated with Arcane Odyssey or any of its subsidiaries.
-
+[Terms, Ethics, Privacy](https://github.com/ciabidev/AO-Challenger/blob/main/TERMS.md)
+[Ban Appeals](https://github.com/ciabidev/AO-Challenger/blob/main/TERMS.md)
 ## Why can't I add the bot / Why is it so slow?
 
 Two possible reasons:
 1. I accidentally made it private  
 2. For the bot to scale larger and be in more servers, I need to verify my identity. Unfortunately, I'm not old enough to verify my identity on Discord (18+)
+3. The Render free plan for the bot has expired
+
+In case any of these have happened, message @wheatwhole_ on Discord IMMEDIATELY.
 `;
 
 </script>
