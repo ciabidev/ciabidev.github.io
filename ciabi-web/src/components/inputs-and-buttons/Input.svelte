@@ -19,7 +19,7 @@
 
 <style>
 	.input-wrapper {
-		box-shadow: var(--input-shadow);
+		box-shadow: var(--card-stroke) 0 0 0 1.5px;
 		border-radius: var(--border-radius);
 		width: 100%;
 		display: flex;
@@ -31,7 +31,7 @@
 	}
 
 	.input-wrapper.focused {
-		box-shadow: var(--input-focus);
+		box-shadow: #000 0 0 0 2px;
 	}
 
 	.input {

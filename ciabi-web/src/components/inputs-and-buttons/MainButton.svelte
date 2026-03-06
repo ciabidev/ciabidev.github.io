@@ -29,17 +29,17 @@
 		appearance: none;
 		cursor: pointer;
 		/* background: var(--color-allgood); */
-		box-shadow: var(--shadow-button);
-		background: var(--button-bg);
+		box-shadow: var(--button-box-shadow);
+		background: var(--button);
 		width: fit-content;
 		transition: all 300ms cubic-bezier(1, 0, 0, 1);
 	}
 
 	@media not all and (hover: none) {
 		.button:hover {
-			/* background: var(--button-bg-inverted);
+			/* background: var(--button-inverted);
 			color: var(--button-color-inverted); */
-			background: var(--button-bg-hover);
+			background: var(--button-hover);
 		}
 	}
 </style>

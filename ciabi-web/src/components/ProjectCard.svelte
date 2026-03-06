@@ -44,7 +44,8 @@
 		transition: 0.3s var(--actions-and-stuff-ahh-transition);
 		max-width: 500px;
 		overflow: hidden;
-		box-shadow: var(--shadow-main-border);
+		box-shadow: var(--card-box-shadow);
+		filter: drop-shadow(0 0 8px var(--card-stroke)) drop-shadow(0 0 10px var(--card-stroke));
 	}
 
 	.card-main {
@@ -75,7 +76,6 @@
 		display: flex;
 		flex-direction: column;
 		text-decoration: none;
-		color: var(--text-color);
 		position: relative;
 		gap: 0.5rem;
 	}

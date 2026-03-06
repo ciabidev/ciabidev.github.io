@@ -13,7 +13,7 @@
 	.result-wrapper {
 		height: 200px;
 		width: 100%;
-		box-shadow: var(--shadow-main-border);
+		box-shadow: var(--button-stroke) 0 0 0 1.5px;
     	border-radius: var(--border-radius);
 	}
 

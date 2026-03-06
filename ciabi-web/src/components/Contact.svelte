@@ -17,7 +17,7 @@
 		border-radius: var(--border-radius);
 		text-decoration: none;
 		color: var(--text-color);
-		box-shadow: var(--shadow-main-border);
+		box-shadow: var(--card-stroke) 0 0 0 1px;
 		 user-select: none;
   -webkit-user-select: none;  /* Safari / iOS */
   -ms-user-select: none; 

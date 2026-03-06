@@ -17,8 +17,8 @@
 	/* i know all these random flex styles are a bandaid solution but for some reason items just wouldn't stay in the flexbox so i had to use this */
 
 	.card {
-		border-radius: var(--border-radius);
-		box-shadow: var(--shadow-main-border);
+		box-shadow: var(--card-box-shadow);
+		filter: drop-shadow(0 0 8px var(--card-stroke)) drop-shadow(0 0 10px var(--card-stroke));
 		display: flex;
 		flex-direction: column;
 		box-sizing: border-box;

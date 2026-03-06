@@ -7,6 +7,8 @@
 
 AO Challenger is an Arcane Odyssey Discord bot that allows you to **ping globally for PvP or find a 1v1**. [ALL of the code is fully free and open source](https://github.com/ciabidev/AO-Challenger).
 
+**Add AO Challenger to your server:** https://discord.com/oauth2/authorize?client_id=1393757819475464313
+
 ## How to Use
 
 ### For Users
@@ -49,7 +51,7 @@ To setup the bot for your server, simply use \`/setup\`
 
 If you find a player abusing the bot or breaking Discord TOS, please report them ASAP:
 
-[Ban Appeals and Reports](https://tally.so/forms/3X6yqV/share)
+[Ban Appeals and Reports](https://tally.so/r/3X6yqV)
 
 ## Support the bot
 If you like the bot and want to support it for *free*, you can upvote it via \`/upvote\`.
