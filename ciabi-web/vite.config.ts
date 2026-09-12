@@ -38,7 +38,7 @@ export default defineConfig({
 		]
 	},
 	server: {
-		port: 6767,
+		port: 61431,
 		fs: {
 			allow: [
 				// your custom rules
