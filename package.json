@@ -1,0 +1,10 @@
+{
+	"name": "ciabi.github.io",
+	"private": true,
+	"scripts": {
+		"postinstall": "npm --prefix ciabi-web ci",
+		"dev": "npm --prefix ciabi-web run dev",
+		"build": "npm --prefix ciabi-web run build",
+		"check": "npm --prefix ciabi-web run check"
+	}
+}
